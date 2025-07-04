@@ -57,7 +57,7 @@ public class CheckoutService {
                     IShippableProduct shippable = (IShippableProduct) product;
                     double totalWeight = shippable.getWeight() * quantity;
                     System.out.println(quantity + "x " + product.getName() + " " +
-                            totalWeight + " kg");
+                            totalWeight + " g");
                 }
             }
 
@@ -65,7 +65,7 @@ public class CheckoutService {
                     .mapToDouble(IShippableProduct::getWeight)
                     .sum();
 
-            System.out.println("Total package weight " + totalWeight + " kg");
+            System.out.println("Total package weight " + totalWeight / 1000 + " kg");
         }
 
         // Checkout receipt

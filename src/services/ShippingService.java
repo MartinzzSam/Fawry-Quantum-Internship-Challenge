@@ -31,7 +31,7 @@ public class ShippingService implements IShippingService {
         double shippingFee = 0.0;
 
         for (IShippableProduct item : shippableItems) {
-            shippingFee += item.getWeight() * Configs.SHIPPING_FEE_PER_KILOGRAM;
+            shippingFee += (item.getWeight() / 1000) * Configs.SHIPPING_FEE_PER_KILOGRAM;
         }
         return shippingFee;
     }

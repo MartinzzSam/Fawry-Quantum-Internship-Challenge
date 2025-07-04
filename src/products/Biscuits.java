@@ -33,6 +33,6 @@ public class Biscuits extends Product implements IPerishable, IShippableProduct 
 
     @Override
     public String getShippingItemDetails() {
-        return  this.getName() + "\n" + "Weight: " + this.getWeight() + "kg";
+        return  this.getName() + "\n" + "Weight: " + this.getWeight() + " g";
     }
 }

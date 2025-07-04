@@ -19,7 +19,7 @@ public class Mobile extends Product implements IShippableProduct {
 
     @Override
     public String getShippingItemDetails() {
-        return  this.getName() + "\n" + "Weight: " + this.getWeight() + "kg";
+        return  this.getName() + "\n" + "Weight: " + this.getWeight() + " g";
     }
 
 

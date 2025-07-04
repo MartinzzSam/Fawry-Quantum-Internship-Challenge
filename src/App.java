@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import classes.Customer;
+import config.Configs;
 import products.Biscuits;
 import products.Mobile;
 import products.MobileScratchCard;
@@ -36,11 +37,11 @@ public class App {
 
 
         // Add Products To Cart
-        cartService.add(inventory.getProduct(1), 2);
-        cartService.add(inventory.getProduct(2), 3);
-        cartService.add(inventory.getProduct(3), 1);
-        cartService.add(inventory.getProduct(4), 1);
-        cartService.add(inventory.getProduct(5), 1);
+        cartService.add(inventory.getProduct(Configs.TV_ID), 2);
+        cartService.add(inventory.getProduct(Configs.MOBILE_ID), 3);
+        cartService.add(inventory.getProduct(Configs.MOBILE_SCRATCH_CARD_ID), 1);
+        cartService.add(inventory.getProduct(Configs.BISCUITS_ID), 1);
+        cartService.add(inventory.getProduct(Configs.CHEESE_ID), 1);
 
 
     

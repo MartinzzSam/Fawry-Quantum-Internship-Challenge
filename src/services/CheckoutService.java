@@ -39,7 +39,7 @@ public class CheckoutService {
 
         //Ship Products
         if (!shippableItems.isEmpty()) {
-            shippingService.ship(shippableItems);
+            shippingService.ship();
         }
 
     }
@@ -64,7 +64,7 @@ public class CheckoutService {
             double totalWeight = shippableItems.stream()
                     .mapToDouble(IShippableProduct::getWeight)
                     .sum();
-                    
+
             System.out.println("Total package weight " + totalWeight + " kg");
         }
 

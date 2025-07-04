@@ -21,8 +21,8 @@ public class ShippingService implements IShippingService {
     }
 
     @Override
-    public void ship(List<IShippableProduct> items) {
-        System.out.println("Shipping items: " + items.stream().map(IShippableProduct::getShippingItemDetails).collect(Collectors.joining("\n")));
+    public void ship() {
+        System.out.println("Shipping items: " + shippableItems.stream().map(IShippableProduct::getShippingItemDetails).collect(Collectors.joining("\n")));
     }
 
     @Override
